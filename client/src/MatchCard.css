@@ -1,0 +1,153 @@
+.card {
+    background-color: #fff;
+    border: var(--grey-border);
+    border-radius: 5px; 
+    margin: 10px 10vw;
+}
+
+.card-container {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card img {
+    position: absolute;
+    left: calc(20px + 10vw);
+    width: 50px;
+    margin-right: var(--side-margin);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+}
+
+.scores-container {
+    display: flex;
+}
+
+.dash {
+    margin: 0 5px;
+}
+
+.home-score {
+    font-weight: bold;
+    margin-left: 5vw;
+}
+
+.away-score {
+    font-weight: bold;
+    margin-right: 5vw;
+}
+
+.left {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.date {
+    position: absolute;
+    right: calc(var(--side-margin) + 10vw);
+}
+
+.chart-wrapper {
+    width: 14vw;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-left {
+    margin: var(--side-margin);
+    padding: 10px;
+}
+
+.competition {
+    font-weight: 500;
+}
+
+.line {
+    margin: 7px 0;
+    height: 1px;
+    background-color: rgb(204, 204, 204);
+}
+
+.matchday {
+    margin-top: 4px;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.venue {
+    font-size: 0.95em;
+}
+
+.stats {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats p {
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.stats-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+.stats-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-stats {
+    background-color: rgb(255, 67, 67);
+}
+
+.draws-stats {
+    background-color: rgb(204, 204, 204);
+}
+
+.away-stats {
+    background-color: rgb(82, 151, 255);
+}
+
+.home-stats:hover .home-stats-num {
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+.draws-stats:hover .draws-stats-num {
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+.away-stats:hover .away-stats-num {
+    opacity: 1;
+    transition: 0.2s ease;
+}

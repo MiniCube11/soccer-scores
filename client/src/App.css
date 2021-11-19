@@ -1,0 +1,66 @@
+:root {
+    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --side-margin: 20px;
+    --grey-border: 1px solid rgb(202, 202, 202);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    font-family: var(--main-font);
+}
+
+h1, .message {
+    margin: 50px 11vw;
+    font-family: var(--main-font);
+}
+
+h2 {
+    height: 10vh;
+}
+
+.buttons {
+    margin-left: 11vw;
+    margin-bottom: 60px;
+}
+
+.buttons button {
+    font-family: var(--main-font);
+    margin-right: 10px;
+    padding: 10px;
+    border: var(--grey-border);
+    border-radius: 2px;
+}
+
+.normal-btn {
+    background-color: rgb(255, 255, 255);
+}
+
+.selected-btn {
+    background-color: rgb(197, 197, 197);
+}
+
+.normal-btn:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.footer {
+    font-family: var(--main-font);
+    color: rgb(83, 83, 83);
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(11, 84, 243);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
