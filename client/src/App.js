@@ -5,7 +5,6 @@ import MatchCard from './MatchCard'
 export const MatchContext = React.createContext()
 
 export default function App() {
-  const headers = {'X-Auth-Token': process.env.REACT_APP_FOOTBALL_API_KEY}
   const [gameStatus, setStatus] = React.useState('LIVE')
   const [matches, setMatches] = React.useState([1])
   const [expanded, setExpanded] = React.useState(-1)
