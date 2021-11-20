@@ -1,4 +1,5 @@
 require('dotenv').config()
+const path = require("path");
 const express = require("express");
 const axios = require("axios");
 
@@ -42,12 +43,18 @@ async function getMatchData(id) {
     }
 }
 
+app.use(express.static(path.resolve(__dirname, '../client/build')))
+
 app.get("/matches/:status", (req, res) => {
     getMatches(req.params.status).then(resp => res.json(resp))
 })
 
 app.get("/match/:id", (req, res) => {
     getMatchData(req.params.id).then(resp => res.json(resp))
+})
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'))
 })
 
 app.listen(PORT);
