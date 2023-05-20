@@ -64,7 +64,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Football Scores</h1>
+      <h1>Soccer Scores</h1>
       <div className="buttons">
         <CategoryButton category={"LIVE"} changeStatus={changeStatus} gameStatus={gameStatus}/>
         <CategoryButton category={"FINISHED"} changeStatus={changeStatus} gameStatus={gameStatus}/>
