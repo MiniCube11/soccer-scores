@@ -1,6 +1,6 @@
-# Football Scores
+# Soccer Scores
 
-A web application for viewing football (soccer) scores, including live scores, full time scores, and scheduled matches. View the live site here (the app takes a few seconds to load): https://footballscores0011.herokuapp.com/
+A web application for viewing soccer scores, including live scores, full time scores, and scheduled matches. View the live site here: https://soccerscores.vercel.app/
 
 Built with:
 - React
@@ -9,4 +9,4 @@ Built with:
 
 &nbsp;
 
-![Demo](demo.jpg)
+![Demo](demo.png)
